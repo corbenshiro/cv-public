@@ -1,0 +1,209 @@
+% The font could be set to Windows-specific Calibri by using the 'calibri' option
+% The default is Nimbus Sans (metric-compatible with Arial)
+\documentclass[]{mcdowellcv}
+
+% For mathematical symbols
+\usepackage{amsmath}
+
+% For hyperlinking
+\usepackage[hidelinks]{hyperref}
+
+% Set applicant's personal data for header
+\name{Corben Dredge}
+\contacts{\href{tel:07*********}{07*********} \linebreak \href{mailto:cdredge@protonmail.ch}{cdredge@protonmail.ch} \linebreak \href{https://corbenshiro.github.io/}{corbenshiro.github.io/}}
+
+% Where the magic happens
+\begin{document}
+
+	% Print the header
+	\makeheader
+
+	% Print the content
+	\begin{cvsection}{Employment}
+		\begin{cvsubsection}{Software Engineer, Intern}{Red Hat, Inc.}{May - August 2019}
+			\begin{itemize}
+				\item Worked on RPM packaging through spec file engineering.
+				\item Bootstrapped (via Podman) containerized Apache Maven and Gradle environments with the Supersonic Subatomic Java implementation known as Quarkus.
+				\item Tinkered with Unix-like systems such as GNU/Linux (various distributions), Alpine Linux (OpenRC with BusyBox compiled against musl libc) and FreeBSD whilst conversing about them with fellow colleagues.
+			\end{itemize}
+		\end{cvsubsection}
+		\begin{cvsubsection}{IT Staff Assistant, Intern}{Newham Sixth Form College}{December 2017}	
+			\begin{itemize}
+				\item Rebuilt workstations and flashed its storage drives with operating system disk images (mainly Windows 7 Professional and Windows 10 Education editions) for later use within the college.
+				\item Fixed printing errors via a reload of all the printers' respective daemons.
+			\end{itemize}
+		\end{cvsubsection}
+	\end{cvsection}
+
+	\begin{cvsection}{Education}
+		\begin{cvsubsection}{Computer Science}{Newham Sixth Form College}{September 2018 - July 2019}
+			\begin{itemize}
+				\item Pearson BTEC Level 3 90-credit Diploma in Information Technology
+			\end{itemize}
+		\end{cvsubsection}
+
+		\begin{cvsubsection}{Networking and Systems}{Newham Sixth Form College}{September 2017 - July 2018}
+			\begin{itemize}
+				\item Pearson BTEC Level 2 First Extended Certificate in Information and Creative Technology
+			\end{itemize}
+		\end{cvsubsection}
+	\end{cvsection}
+
+	\begin{cvsection}{Authenticity}
+		\begin{cvsubsection}{Proof}{}{}
+			\begin{itemize}
+				\item For details unto how I secure my website, webpages and documents (including this curriculum vitæ); refer to:
+				\begin{itemize}
+					\item \href{https://corbenshiro.github.io/security-of-this-site/}{corbenshiro.github.io/security-of-this-site/}
+				\end{itemize}
+			\end{itemize}
+		\end{cvsubsection}
+	\end{cvsection}
+
+	\begin{cvsection}{Technical Experience}
+		\begin{cvsubsection}{Verified Boot}{}{}	
+			\begin{itemize}
+				\item Cryptographically utilises hardware-backed root of trust in order to eliminate malware persistence.
+				\begin{itemize}
+					\item Android (AOSP)
+					\begin{itemize}
+						\item GrapheneOS
+					\end{itemize}
+					\item Chrome OS (Chromium OS)
+					\item iOS/iPadOS
+					\item macOS
+					\item Windows NT (preferably Windows 10 on a Secured-core PC)
+					\item Qubes OS (with the Anti Evil Maid module explicitly installed and enabled)
+				\end{itemize}
+			\end{itemize}
+		\end{cvsubsection}
+		\begin{cvsubsection}{Mandatory Access Control}{}{}
+			\begin{itemize}
+				\item Infinitely preferable to DAC; full system MAC policies are highly encouraged.
+				\begin{itemize}
+					\item SELinux
+					\begin{itemize}
+						\item AOSP and by inheritance; GrapheneOS's stricter base SELinux policy.
+						\item Chromium OS
+					\end{itemize}
+					\item AppArmor
+					\begin{itemize}
+						\item apparmor-profile-everything
+						\item sandbox-app-launcher (requires bubblewrap)
+					\end{itemize}
+					\item System Integrity Protection (macOS)
+					\item Mandatory Integrity Control (Windows NT)
+				\end{itemize}
+			\end{itemize}
+		\end{cvsubsection}
+		\begin{cvsubsection}{Full-disk Encryption}{}{}
+			\begin{itemize}
+				\item Recommended to use in conjunction with verified boot as it cannot safeguard boot by itself.
+				\begin{itemize}
+					\item LUKS (dm-crypt)
+					\item VeraCrypt
+					\item FileVault 2
+					\item BitLocker
+				\end{itemize}
+			\end{itemize}
+		\end{cvsubsection}
+		\begin{cvsubsection}{Memory-safe Langages}{}{}
+			\begin{itemize}
+				\item A subset of recommended practices in memory safety that holistically pertains to programming.
+				\begin{itemize}
+					\item Rust (Windows NT is adopting this)
+					\item Java/Kotlin (Android favours the latter for application development)
+					\item Swift (developed by Apple for their operating systems; intended as a memory-safe (among other things) replacement for Objective-C)
+				\end{itemize}
+			\end{itemize}
+		\end{cvsubsection}
+		\begin{cvsubsection}{Virtualization-based Security}{}{}
+			\begin{itemize}
+				\item The Windows 10 host becomes its own VM, therefore it is able to ensure memory integrity via Hypervisor-Enforced Code Integrity.
+				\begin{itemize}
+					\item TPM 2.0, UEFI and Hyper-V are prerequisites.
+				\end{itemize}
+			\end{itemize}
+		\end{cvsubsection}
+		\begin{cvsubsection}{Xen-based Virtualization}{}{}
+			\begin{itemize}
+				\item Security by compartimentalization.
+				\begin{itemize}
+					\item Qubes OS
+					\begin{itemize}
+						\item Split GPG (preferable to utilise vault for Master Keyring as well as to allocate a network-isolated VM each with their own respective subkey)
+						\item Split SSH (preferable to utilise vault via KeePassXC with SSH Agent integration)
+					\end{itemize}
+				\end{itemize}
+			\end{itemize}
+		\end{cvsubsection}
+		\begin{cvsubsection}{STIGs}{}{}
+			\begin{itemize}
+				\item \href{https://dl.dod.cyber.mil/wp-content/uploads/stigs/zip/U\_MS\_Windows\_10\_V2R2\_STIG.zip}{dl.dod.cyber.mil/wp-content/uploads/stigs/zip/U\_MS\_Windows\_10\_V2R2\_STIG.zip}
+				\item \href{https://dl.dod.cyber.mil/wp-content/uploads/stigs/zip/U\_MS\_Windows\_Server\_2019\_V2R2\_STIG.zip}{dl.dod.cyber.mil/wp-content/uploads/stigs/zip/U\_MS\_Windows\_Server\_2019\_V2R2\_STIG.zip}
+				\item \href{https://dl.dod.cyber.mil/wp-content/uploads/stigs/zip/U\_MS\_Windows\_Defender\_Antivirus\_V2R2\_STIG.zip}{dl.dod.cyber.mil/wp-content/uploads/stigs/zip/U\_MS\_Windows\_Defender\_Antivirus\_V2R2\_STIG.zip}
+				\item \href{https://dl.dod.cyber.mil/wp-content/uploads/stigs/zip/U\_Windows\_Firewall\_V1R7\_STIG.zip}{dl.dod.cyber.mil/wp-content/uploads/stigs/zip/U\_Windows\_Firewall\_V1R7\_STIG.zip}
+				\item \href{https://dl.dod.cyber.mil/wp-content/uploads/stigs/zip/U\_Oracle\_JRE\_Windows\_V2R1\_STIG.zip}{dl.dod.cyber.mil/wp-content/uploads/stigs/zip/U\_Oracle\_JRE\_Windows\_V2R1\_STIG.zip}
+			\end{itemize}
+		\end{cvsubsection}
+		\begin{cvsubsection}{Typesetting Automation}{}{}
+			\begin{itemize}
+				\item \TeX
+				\begin{itemize}
+					\item \LaTeX
+					\begin{itemize}
+						\item Lua\LaTeX
+					\end{itemize}
+				\end{itemize}
+			\end{itemize}
+		\end{cvsubsection}
+	\end{cvsection}
+
+	\begin{cvsection}{Repositories}
+		\begin{cvsubsection}{Accessible over SSH}{}{}
+			\begin{itemize}
+				\item git@github.com:corbenshiro/cv-public
+				\item git@github.com:corbenshiro/site
+				\item git@github.com:corbenshiro/corbenshiro.github.io
+			\end{itemize}
+		\end{cvsubsection}
+		\begin{cvsubsection}{Accessible over HTTPS}{}{}
+			\begin{itemize}
+				\item \href{https://github.com/corbenshiro/cv-public}{github.com/corbenshiro/cv-public}
+				\item \href{https://github.com/corbenshiro/site}{github.com/corbenshiro/site}
+				\item \href{https://github.com/corbenshiro/corbenshiro.github.io}{github.com/corbenshiro/corbenshiro.github.io}
+			\end{itemize}
+		\end{cvsubsection}
+	\end{cvsection}
+
+	\begin{cvsection}{Non-academic Interests}
+		\begin{cvsubsection}{Sports and Fitness}{}{}	
+			\begin{itemize}
+				\item Tennis
+				\item Badminton
+				\item Weightlifting
+			\end{itemize}
+		\end{cvsubsection}
+		\begin{cvsubsection}{Cinematography}{}{}	
+			\begin{itemize}
+				\item Banpaia Hantā Dī: Buraddorasuto
+				\item Hokuto no Ken
+				\item Disney's Hercules
+			\end{itemize}
+		\end{cvsubsection}
+		\begin{cvsubsection}{Humour}{}{}	
+			\begin{itemize}
+				\item 01010100 01101000 01100101 00100000 01100011 01100001 01101011 01100101 00100000 01101001 01110011 00100000 01100001 00100000 01101100 01101001 01100101 00101110
+			\end{itemize}
+		\end{cvsubsection}
+	\end{cvsection}
+	
+	\begin{cvsection}{References}
+		\begin{cvsubsection}{}{}{}
+			\begin{itemize}
+				\item They are available upon request.
+			\end{itemize}
+		\end{cvsubsection}
+	\end{cvsection}
+	
+\end{document}
