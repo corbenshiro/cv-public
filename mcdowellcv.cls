@@ -2,7 +2,7 @@
 
 % Set up the fonts according to options
 \def\mainfontsize{10pt}
-\def\mainfontface{Nimbus Sans}
+\def\mainfontface{TeX Gyre Heros}
 
 \DeclareOption{calibri}{%
   \def\mainfontface{Calibri}
