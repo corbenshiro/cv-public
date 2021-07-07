@@ -1,5 +1,5 @@
 % The font could be set to Windows-specific Calibri by using the 'calibri' option
-% The default is Nimbus Sans (metric-compatible with Arial)
+% The default is TeX Gyre Heros (metric-compatible with Arial)
 \documentclass[]{mcdowellcv}
 
 % For mathematical symbols
@@ -27,7 +27,7 @@
 				\item Tinkered with Unix-like systems such as GNU/Linux (various distributions), Alpine Linux (OpenRC with BusyBox compiled against musl libc) and FreeBSD whilst conversing about them with fellow colleagues.
 			\end{itemize}
 		\end{cvsubsection}
-		\begin{cvsubsection}{IT Staff Assistant, Intern}{Newham Sixth Form College}{December 2017}	
+		\begin{cvsubsection}{IT Staff Assistant, Intern}{Newham Sixth Form College}{December 2017}
 			\begin{itemize}
 				\item Rebuilt workstations and flashed its storage drives with operating system disk images (mainly Windows 7 Professional and Windows 10 Education editions) for later use within the college.
 				\item Fixed printing errors via a reload of all the printers' respective daemons.
@@ -49,25 +49,11 @@
 		\end{cvsubsection}
 	\end{cvsection}
 
-	\begin{cvsection}{Authenticity}
-		\begin{cvsubsection}{}{}{}
-			\begin{itemize}
-				\item For details unto how I secure my website, webpages and documents (including this curriculum vitæ); refer to:
-				\begin{itemize}
-					\item \href{https://corbenshiro.github.io/security-of-this-site/}{corbenshiro.github.io/security-of-this-site/}
-				\end{itemize}
-			\end{itemize}
-		\end{cvsubsection}
-	\end{cvsection}
-
 	\begin{cvsection}{Personal Summary}
 		\begin{cvsubsection}{}{}{}
 			\begin{itemize}
-				\item I'm familiar with both ends of conversation — speaking and listening, therefore I'm accustomed to developing rapport as well as being affable.
-				\item I'm very thorough in regard to my interests in IT, therefore I've acquired many skills that revolve around computing (especially cybersecurity).
-				\begin{itemize}
-					\item Evidenced by the following:
-				\end{itemize}
+				\item I'm familiar with both ends of conversation — speaking and listening, I have become accustomed to developing rapport as well as being affable.
+				\item I'm very thorough in regard to my interests in IT, therefore I've acquired many skills that revolve around computing (including subcategories of cybersecurity, software engineering and technical writing).
 			\end{itemize}
 		\end{cvsubsection}
 		\begin{cvsubsection}{Verified Boot}{}{}	
@@ -123,12 +109,13 @@
 					\item Java/Kotlin (Android favours the latter for application development)
 					\item Swift (developed by Apple for their operating systems; intended as a memory-safe (among other things) replacement for Objective-C)
 					\item Rust (Windows NT is adopting this)
+					\item Go (the all-in-one — statically typed, compiled programming language with memory safety, garbage collection, structural typing and CSP-style concurrency)
 				\end{itemize}
 			\end{itemize}
 		\end{cvsubsection}
 		\begin{cvsubsection}{Virtualization-based Security}{}{}
 			\begin{itemize}
-				\item The Windows 10 host becomes its own VM, therefore it is able to ensure memory integrity via Hypervisor-Enforced Code Integrity.
+				\item The Windows 10 host becomes its own VM, thus ensuring memory integrity via Hypervisor-Enforced Code Integrity.
 				\begin{itemize}
 					\item TPM 2.0, UEFI and Hyper-V are prerequisites.
 				\end{itemize}
@@ -148,12 +135,25 @@
 		\end{cvsubsection}
 		\begin{cvsubsection}{STIGs}{}{}
 			\begin{itemize}
-				\item \href{https://dl.dod.cyber.mil/wp-content/uploads/stigs/zip/U\_MS\_Windows\_10\_V2R2\_STIG.zip}{dl.dod.cyber.mil/wp-content/uploads/stigs/zip/U\_MS\_Windows\_10\_V2R2\_STIG.zip}
-				\item \href{https://dl.dod.cyber.mil/wp-content/uploads/stigs/zip/U\_MS\_Windows\_Server\_2019\_V2R2\_STIG.zip}{dl.dod.cyber.mil/wp-content/uploads/stigs/zip/U\_MS\_Windows\_Server\_2019\_V2R2\_STIG.zip}
-				\item \href{https://dl.dod.cyber.mil/wp-content/uploads/stigs/zip/U\_MS\_Windows\_Defender\_Antivirus\_V2R2\_STIG.zip}{dl.dod.cyber.mil/wp-content/uploads/stigs/zip/U\_MS\_Windows\_Defender\_Antivirus\_V2R2\_STIG.zip}
-				\item \href{https://dl.dod.cyber.mil/wp-content/uploads/stigs/zip/U\_Windows\_Firewall\_V1R7\_STIG.zip}{dl.dod.cyber.mil/wp-content/uploads/stigs/zip/U\_Windows\_Firewall\_V1R7\_STIG.zip}
-				\item \href{https://dl.dod.cyber.mil/wp-content/uploads/stigs/zip/U\_MS_Office\_365\_ProPlus\_V2R2\_STIG.zip}{dl.dod.cyber.mil/wp-content/uploads/stigs/zip/U\_MS\_Office\_365\_ProPlus\_V2R2\_STIG.zip}
-				\item \href{https://dl.dod.cyber.mil/wp-content/uploads/stigs/zip/U\_Oracle\_JRE\_Windows\_V2R1\_STIG.zip}{dl.dod.cyber.mil/wp-content/uploads/stigs/zip/U\_Oracle\_JRE\_Windows\_V2R1\_STIG.zip}
+				\item Windows 10 V2R1
+				\item Windows Server 2019 V2R1
+				\item Windows Defender Antivirus V2R1
+				\item Windows Firewall V1R7
+				\item Microsoft Office 2019/Office 365 Pro Plus V1R2
+				\item Oracle JRE 8 V1R5
+			\end{itemize}
+		\end{cvsubsection}
+		\begin{cvsubsection}{Development Environments}{}{}
+			\begin{itemize}
+				\item MSYS2 package groups
+				\begin{itemize}
+					\item base-devel
+					\item mingw-w64-x86\_64-toolchain
+				\end{itemize}
+				\item Revision control systems
+				\begin{itemize}
+					\item Git (command-line reference is stylised as git)
+				\end{itemize}
 			\end{itemize}
 		\end{cvsubsection}
 		\begin{cvsubsection}{Word Processors}{}{}
@@ -175,42 +175,39 @@
 		\end{cvsubsection}
 	\end{cvsection}
 
-	\begin{cvsection}{Repositories}
-		\begin{cvsubsection}{Accessible over SSH}{}{}
+	\begin{cvsection}{Authenticity}
+		\begin{cvsubsection}{}{}{}
 			\begin{itemize}
-				\item git@github.com:corbenshiro/cv-public
-				\item git@github.com:corbenshiro/site
-			\end{itemize}
-		\end{cvsubsection}
-		\begin{cvsubsection}{Accessible over HTTPS}{}{}
-			\begin{itemize}
-				\item \href{https://github.com/corbenshiro/cv-public}{github.com/corbenshiro/cv-public}
-				\item \href{https://github.com/corbenshiro/site}{github.com/corbenshiro/site}
+				\item For details unto how I secure my website, webpages and documents (including this curriculum vitæ); refer to:
+				\begin{itemize}
+					\item \href{https://corbenshiro.github.io/security-of-this-site/}{corbenshiro.github.io/security-of-this-site/}
+				\end{itemize}
 			\end{itemize}
 		\end{cvsubsection}
 	\end{cvsection}
 
 	\begin{cvsection}{Extracurricular Interests}
-		\begin{cvsubsection}{Sports and Fitness}{}{}	
+		\begin{cvsubsection}{Sports and Fitness}{}{}
 			\begin{itemize}
 				\item Badminton
 				\item Weightlifting
 			\end{itemize}
 		\end{cvsubsection}
-		\begin{cvsubsection}{Cinematography}{}{}	
+		\begin{cvsubsection}{Franchises}{}{}
 			\begin{itemize}
-				\item Banpaia Hantā Dī: Buraddorasuto
+				\item Vanpaia Hantā Dī
 				\item Hokuto no Ken
-				\item Disney's Hercules
+				\item Warhammer 40K
+				\item Freedom Force
 			\end{itemize}
 		\end{cvsubsection}
-		\begin{cvsubsection}{Geek Code (v3.12)}{}{}	
+		\begin{cvsubsection}{Geek Code (v3.12)}{}{}
 			\begin{itemize}
 				\item GCS/IT/TW !d s+:- a? C U++ P+ K- w++++ Y+ PGP+ R* !tv h++ !y+
 			\end{itemize}
 		\end{cvsubsection}
 	\end{cvsection}
-	
+
 	\begin{cvsection}{References}
 		\begin{cvsubsection}{}{}{}
 			\begin{itemize}
@@ -218,5 +215,5 @@
 			\end{itemize}
 		\end{cvsubsection}
 	\end{cvsection}
-	
+
 \end{document}
